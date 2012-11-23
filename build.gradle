@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.6
+
+repositories {
+  mavenCentral()
+  maven {
+    url 'http://download.java.net/maven/2/'
+  }
+
+}
+
+dependencies {
+  providedCompile 'javax:javaee-api:6.0'
+}
+
