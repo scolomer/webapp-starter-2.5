@@ -3,6 +3,10 @@ apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'jetty'
 
+task stage << {
+    println 'Hello world!'
+}
+
 repositories {
   mavenCentral()
   maven {
