@@ -3,9 +3,7 @@ apply plugin: 'war'
 apply plugin: 'eclipse'
 apply plugin: 'jetty'
 
-task stage << {
-    println 'Hello world!'
-}
+sourceCompatibility = 1.6
 
 repositories {
   mavenCentral()
@@ -16,7 +14,6 @@ repositories {
 }
 
 dependencies {
-//  providedCompile 'javax:javaee-api:6.0'
   providedCompile "javax.servlet:servlet-api:2.5"
 }
 
